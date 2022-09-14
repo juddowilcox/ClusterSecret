@@ -1,0 +1,4 @@
+image:
+  registry: "" #if set, must end in /
+  repository: __IMG_FQNAME__
+  tag: "__IMG_VERSION__"

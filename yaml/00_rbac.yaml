@@ -14,6 +14,8 @@ kind: ClusterRole
 metadata:
   name: clustersecret-role-cluster
 rules:
+  #- nonResourceURLs: ['*']
+  #  verbs: ['*']
   # Framework: knowing which other operators are running (i.e. peering).
   - apiGroups: [clustersecret.io]
     resources: [clusterkopfpeerings]

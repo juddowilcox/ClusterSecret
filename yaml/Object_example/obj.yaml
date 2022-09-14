@@ -9,13 +9,11 @@ metadata:
   annotations:
     someannotation: somevalue
 matchNamespace:
-  - 'prefix_ns-.+'
-  - 'anothernamespace'
-  - 'cluster.*'
+  - '.*'
 avoidNamespaces:
-  - supersecret-ns
-  - default
   - kube-system
+  - kube-public
+  - kube-node-lease
 data:
   tls.crt: MTIzNDU2Cg==
   tls.key: Nzg5MTAxMTIxMgo=
